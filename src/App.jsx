@@ -49,7 +49,7 @@ function App() {
           <Route
             path="/common"
             element={
-              <ProtectedRoute roles={["student"]}>
+              <ProtectedRoute roles={["student","professional"]}>
                 <TaskDashboard />
               </ProtectedRoute>
             }
@@ -112,9 +112,7 @@ function Navbar({ isLoggedIn, user, setIsLoggedIn }) {
             My Tasks
           </Link>
         )}
-<Link to="/common" className="hover:text-blue-400 transition">
-            My Tasks
-          </Link>
+
 
       </div>
 
