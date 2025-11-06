@@ -99,7 +99,7 @@ function Navbar({ isLoggedIn, user, setIsLoggedIn }) {
           </>
         )}
 
-        {/* ✅ Conditional links based on user role */}
+        {/* ✅ Conditional links based on user roles */}
        
         {isLoggedIn && user?.userType === "admin" && (
           <Link to="/admin" className="hover:text-blue-400 transition">
